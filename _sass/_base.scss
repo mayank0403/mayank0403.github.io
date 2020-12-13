@@ -35,14 +35,15 @@ a, table.table a {
 // Profile
 
 .profile {
-  margin-left: 1rem;
+  //margin-left: 0.5rem;
+  margin-right: 2rem;
   width: 100%;
 
   .address {
     margin-bottom: 5px;
     margin-top: 5px;
     font-family: monospace;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     p {
       display: inline-block;
       margin: 0;
@@ -158,6 +159,10 @@ a, table.table a {
 
 .news table th {
   color: var(--global-text-color);
+}
+
+.news ul {
+    list-style: none;
 }
 
 // Social (bottom)
@@ -283,35 +288,60 @@ footer.sticky-bottom {
 // Publications
 
 .publications {
-  margin-top: 2rem;
   h1 {
     color: var(--global-theme-color);
     font-size: 2rem;
-    text-align: center;
+    text-align: left;
     margin-top: 1em;
     margin-bottom: 1em;
   }
   h2 {
-    margin-bottom: 1rem;
+    //margin-bottom: 1rem;
     span {
       font-size: 1.5rem;
     }
   }
   h2.year {
-    color: $grey-color-light;
-    border-top: 1px solid $grey-color-light;
+    color: $black-color;
+    border-top: 1px solid $grey-color-dark;
     padding-top: 1rem;
+    margin-top: 2rem;
+    margin-bottom: -2rem;
+    text-align: right;
+  }
+  h4 {
+    span {
+      font-size: 1.5rem;
+    }
+  }
+  h4.year {
+    color: $black-color;
+    border-top: 1px solid $grey-color-dark;
+    padding-top: 1rem;
+    margin-top: 2rem;
+    margin-bottom: -2rem;
+    text-align: right;
+  }
+  h6 {
+    span {
+      font-size: 1.5rem;
+    }
+  }
+  h6.year {
+    color: $black-color;
+    border-top: 1px dashed $grey-color-dark;
+    padding-top: 1.2rem;
     margin-top: 2rem;
     margin-bottom: -2rem;
     text-align: right;
   }
   ol.bibliography {
     list-style: none;
-    padding: 0;
-    margin-top: 0;
+    //padding: 0;
+    //margin-top: 0;
 
     li {
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
       .abbr {
         height: 2rem;
         margin-bottom: 0.5rem;
@@ -399,6 +429,14 @@ footer.sticky-bottom {
       }
     }
   }
+}
+
+// Bio
+
+.bio {
+    text-align: left;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 // Rouge Color Customization

@@ -2,48 +2,38 @@
 ---
 
 <div class="row">
-  <div class="col-sm-2 abbr">
-  {% if entry.abbr %}
-    {% if site.data.venues[entry.abbr] %}
-    <abbr class="badge"><a href="{{site.data.venues[entry.abbr].url}}" target="_blank">{{entry.abbr}}</a></abbr>
-    {% else %}
-    <abbr class="badge">{{entry.abbr}}</abbr>
-    {% endif %}
-  {% endif %}
-  </div>
-
   <div id="{{entry.key}}" class="col-sm-8">
     {% if entry.type == "thesis" %}
       {{reference}}
     {% else %}
-      <div class="title">{{entry.title}}</div>
+    <div class="title"><a href="{{entry.url}}">{{entry.title}}</a></div>
       <div class="author">
         {% for author in entry.author_array %}
           {% if forloop.length == 1 %}
-            {% if author.last == site.scholar.last_name %}
-              <em>{{author.last}}, {{author.first}}</em>
+            {% if author.last == site.scholar.last_name and author.first == site.scholar.first_name %}
+            <nobr><em> {{author.first}} {{author.last}}</em></nobr>
             {% else %}
-              {{author.last}}, {{author.first}}
+             <nobr> {{author.first}} {{author.last}}</nobr>
             {% endif %}
           {% else %}
             {% unless forloop.last %}
-              {% if author.last == site.scholar.last_name %}
-                <em>{{author.last}}, {{author.first}}</em>,
+              {% if author.last == site.scholar.last_name and author.first == site.scholar.first_name %}
+               <nobr> <em>{{author.first}} {{author.last}}</em>,</nobr>
               {% else %}
                 {% if site.data.coauthors[author.last] %}
-                  <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.last}}, {{author.first}}</a>,
+                 <nobr> <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.last}}, {{author.first}}</a>,</nobr>
                 {% else %}
-                  {{author.last}}, {{author.first}},
+                 <nobr> {{author.first}} {{author.last}},</nobr>
                 {% endif %}
               {% endif %}
             {% else %}
-              {% if author.last == site.scholar.last_name %}
-                and <em>{{author.last}}, {{author.first}}</em>
+              {% if author.last == site.scholar.last_name and author.first == site.scholar.first_name %}
+               <nobr> and <em>{{author.first}} {{author.last}}</em></nobr>
               {% else %}
                 {% if site.data.coauthors[author.last] %}
-                  and <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.last}}, {{author.first}}</a>
+                  <nobr>and <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.last}}, {{author.first}}</a></nobr>
                 {% else %}
-                  and {{author.last}}, {{author.first}}
+                 <nobr> and {{author.first}} {{author.last}}</nobr>
                 {% endif %}
               {% endif %}
             {% endunless %}
@@ -53,9 +43,9 @@
 
       <div class="periodical">
       {% if entry.type == "article" %}
-        <em>{{entry.journal}}</em>
+      <em><b>{{entry.journal}}</b></em>
       {% elsif entry.type == "inproceedings" %}
-        <em>In {{entry.booktitle}}</em>
+      <em>In <b>{{entry.booktitle}}</b></em>
       {% endif %}
       {% if entry.year %}
         {{entry.year}}
@@ -109,6 +99,9 @@
     {% endif %}
     {% if entry.website %}
       <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Website</a>
+    {% endif %}
+    {% if entry.video %}
+      <a href="{{ entry.video }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Video</a>
     {% endif %}
     </div>
 
