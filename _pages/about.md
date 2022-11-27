@@ -12,7 +12,7 @@ profile:
 news: false  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
-years: [2022, 2021, 2020, 2019, 2018, 2017]
+years: [2023, 2022, 2021, 2020, 2019, 2018, 2017]
 ---
 
 <h2>
@@ -26,7 +26,7 @@ Email ~ mayankr at berkeley dot edu |
 <!--Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.-->
 
 <!--Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/){:target="\_blank"} and [Academicons](https://jpswalsh.github.io/academicons/){:target="\_blank"}, like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.-->
-I am a first-year CS Ph.D. student at UC Berkeley advised by <a href="https://people.eecs.berkeley.edu/~raluca/">Prof. Raluca Ada Popa</a>.
+I am a second-year CS Ph.D. student at UC Berkeley advised by <a href="https://people.eecs.berkeley.edu/~raluca/">Prof. Raluca Ada Popa</a>.
 
 From 2018-2020, I was a Research Fellow at Microsoft Research (MSR) India, where I worked closely with <a href="https://www.microsoft.com/en-us/research/people/nichandr/">Nishanth Chandran</a>, <a href="https://www.microsoft.com/en-us/research/people/digup/">Divya Gupta</a>, <a href="https://www.microsoft.com/en-us/research/people/rahsha/">Rahul Sharma</a> and <a href="https://www.microsoft.com/en-us/research/people/aseemr/">Aseem Rastogi</a> on the <a href="https://www.microsoft.com/en-us/research/project/ezpc-easy-secure-multi-party-computation/">EzPC</a> project.
 I did my B.Tech. from the <a href="https://www.iitbhu.ac.in/">Indian Institute of Technology (Banaras Hindu University) Varanasi</a>. During my undergrad, I worked with <a href="http://chepurnoy.org/">Alexander Chepurnoy</a>, Prof. <a href="http://www.f.waseda.jp/tkoshiba/">Takeshi Koshiba</a>, <a href="http://t2r2.star.titech.ac.jp/cgi-bin/researcherinfo.cgi?lv=en&q_researcher_content_number=CTT100381367">Keisuke Tanaka</a> and <a href="https://iohk.io/en/team/mario-larangeira">Mario Larangeira</a>.
