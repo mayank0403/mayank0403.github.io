@@ -26,7 +26,7 @@ Email ~ mayankr at berkeley dot edu |
 <!--Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.-->
 
 <!--Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/){:target="\_blank"} and [Academicons](https://jpswalsh.github.io/academicons/){:target="\_blank"}, like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.-->
-I am a second-year CS Ph.D. student at UC Berkeley advised by <a href="https://people.eecs.berkeley.edu/~raluca/">Prof. Raluca Ada Popa</a>.
+I am a third-year CS Ph.D. student at UC Berkeley advised by <a href="https://people.eecs.berkeley.edu/~raluca/">Prof. Raluca Ada Popa</a>.
 
 From 2018-2020, I was a Research Fellow at Microsoft Research (MSR) India, where I worked closely with <a href="https://www.microsoft.com/en-us/research/people/nichandr/">Nishanth Chandran</a>, <a href="https://www.microsoft.com/en-us/research/people/digup/">Divya Gupta</a>, <a href="https://www.microsoft.com/en-us/research/people/rahsha/">Rahul Sharma</a> and <a href="https://www.microsoft.com/en-us/research/people/aseemr/">Aseem Rastogi</a> on the <a href="https://www.microsoft.com/en-us/research/project/ezpc-easy-secure-multi-party-computation/">EzPC</a> project.
 I did my B.Tech. from the <a href="https://www.iitbhu.ac.in/">Indian Institute of Technology (Banaras Hindu University) Varanasi</a>. During my undergrad, I worked with <a href="http://chepurnoy.org/">Alexander Chepurnoy</a>, Prof. <a href="http://www.f.waseda.jp/tkoshiba/">Takeshi Koshiba</a>, <a href="http://t2r2.star.titech.ac.jp/cgi-bin/researcherinfo.cgi?lv=en&q_researcher_content_number=CTT100381367">Keisuke Tanaka</a> and <a href="https://iohk.io/en/team/mario-larangeira">Mario Larangeira</a>.
@@ -37,13 +37,34 @@ I did my B.Tech. from the <a href="https://www.iitbhu.ac.in/">Indian Institute o
 <br>
 
 
+<!--<div class="news">-->
+  <!--<h4>News</h4>-->
+    <!--<ul>-->
+        <!--<li><b>Jun 2020</b> ~ I have extended my stay at MSR until the end of this year and will be starting my Ph.D. at Berkeley in Spring 2021.</li>-->
+        <!--<li><b>Feb 2020</b> ~ I will be joining UC Berkeley as a Ph.D. student starting this Fall.</li>-->
+    <!--</ul>-->
+<!--</div>-->
 <div class="news">
-  <h4>News</h4>
+  <h4>Talks</h4>
     <ul>
-        <li><b>Jun 2020</b> ~ I have extended my stay at MSR until the end of this year and will be starting my Ph.D. at Berkeley in Spring 2021.</li>
-        <li><b>Feb 2020</b> ~ I will be joining UC Berkeley as a Ph.D. student starting this Fall.</li>
+        <li> ELSA: Secure Aggregation for Federated Learning with Malicious Actors  <ul>
+        <li><b>May 2023</b> ~ <a href="https://youtu.be/PmlJ0cQhgR8">IEEE S&P</a> </li>
+        <li><b>April 2023</b> ~ MIT Security Seminar </li>
+        <li><b>April 2023</b> ~ <a href="https://youtu.be/Q_3voRu25QU">CMU Crypto Seminar</a> </li> 
+    </ul> </li>
+        
+        <li> Function Secret Sharing for Mixed-Mode and Fixed-Point Secure Computation <ul>
+        <li><b>Oct 2021</b> ~ <a href="https://youtube.com/watch?v=22BfFkP_Hbk">Eurocrypt</a>  </li>
+        </ul> </li>
+        
+        <li> CrypTFlow: Secure TensorFlow Inference <ul>
+        <li><b>Jun 2020</b> ~ <a href="https://youtu.be/ydlEncvKTtU">TPMPC Aarhus</a>  </li>
+        </ul> </li>
+
     </ul>
 </div>
+
+
 <div class="publications">
   <h4>Publications</h4>
     {% for y in page.years %}
