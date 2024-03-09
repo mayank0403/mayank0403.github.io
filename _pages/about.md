@@ -12,7 +12,7 @@ profile:
 news: false  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
-years: [2023, 2022, 2021, 2020, 2019, 2018, 2017]
+years: [2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017]
 ---
 
 <h2>
