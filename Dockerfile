@@ -26,6 +26,8 @@ RUN gem install bundler -v 2.4.22 && bundle install
 # Expose the port Jekyll serves on
 EXPOSE 4000
 
+RUN bundle install
+
 # Default command
 CMD ["/bin/bash"]
 # CMD ["bundle", "exec", "jekyll", "serve", "--host", "0.0.0.0"]
