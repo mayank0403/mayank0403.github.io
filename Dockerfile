@@ -1,5 +1,5 @@
 # Use an ARM64-compatible Ruby base image
-FROM ruby:3.1.3-slim-bullseye
+FROM ruby:2.7.8-slim-bullseye
 
 # Install dependencies
 RUN apt-get update -qq && apt-get install -y \
