@@ -2,33 +2,73 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: false # includes a list of papers marked as "selected={true}"
+social: false # includes social icons at the bottom of the page
 
-announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
 ---
+<h2>
+Mayank Rathee
+</h2>
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Email ~ mayankr at berkeley dot edu | 
+<a href="https://dblp.org/pid/33/2105-2.html">dblp</a>, <a href="https://scholar.google.com/citations?user=8wUzHzwAAAAJ&hl=en">Scholar</a>
+<!--Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com){:target="\_blank"}. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.-->
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+<!--Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.-->
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+<!--Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/){:target="\_blank"} and [Academicons](https://jpswalsh.github.io/academicons/){:target="\_blank"}, like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.-->
+I am a fifth-year CS Ph.D. student at UC Berkeley advised by <a href="https://people.eecs.berkeley.edu/~raluca/">Prof. Raluca Ada Popa</a>.
+
+<!-- From 2018-2020, I was a Research Fellow at Microsoft Research (MSR) India, where I worked closely with <a href="https://www.microsoft.com/en-us/research/people/nichandr/">Nishanth Chandran</a>, <a href="https://www.microsoft.com/en-us/research/people/digup/">Divya Gupta</a>, <a href="https://www.microsoft.com/en-us/research/people/rahsha/">Rahul Sharma</a> and <a href="https://www.microsoft.com/en-us/research/people/aseemr/">Aseem Rastogi</a> on the <a href="https://www.microsoft.com/en-us/research/project/ezpc-easy-secure-multi-party-computation/">EzPC</a> project.
+I did my B.Tech. from the <a href="https://www.iitbhu.ac.in/">Indian Institute of Technology (Banaras Hindu University) Varanasi</a>. During my undergrad, I worked with <a href="http://chepurnoy.org/">Alexander Chepurnoy</a>, Prof. <a href="http://www.f.waseda.jp/tkoshiba/">Takeshi Koshiba</a>, <a href="http://t2r2.star.titech.ac.jp/cgi-bin/researcherinfo.cgi?lv=en&q_researcher_content_number=CTT100381367">Keisuke Tanaka</a> and <a href="https://iohk.io/en/team/mario-larangeira">Mario Larangeira</a>.-->
+
+
+<br>
+<br>
+<br>
+
+
+<div class="news">
+  <h4>News</h4>
+    <ul>
+        <li><b>May 2025</b> ~ I will be interning at AWS in NYC this summer.
+        <li><b>May 2024</b> ~ I will be interning at Apple in Cupertino this summer.
+        <li><b>Jun 2020</b> ~ I have extended my stay at MSR until the end of this year and will be starting my Ph.D. at Berkeley in Spring 2021.</li>
+        <li><b>Feb 2020</b> ~ I will be joining UC Berkeley as a Ph.D. student starting this Fall.</li>
+    </ul>
+</div>
+<div class="news">
+  <h4>Talks</h4>
+    <ul>
+        <li> Verifiable PIR with Small Client Storage  <ul>
+        <li><b>May 2025</b> ~ Penn Security Seminar </li>
+        <li><b>May 2025</b> ~ MIT Security Seminar </li>
+        <li><b>July 2025</b> ~ AWS NYC </li>
+        <li><b>July 2025</b> ~ JP Morgan NYC </li>
+    </ul> </li>
+
+        <li> ELSA: Secure Aggregation for Federated Learning with Malicious Actors  <ul>
+        <li><b>May 2023</b> ~ <a href="https://youtu.be/PmlJ0cQhgR8">IEEE S&P</a> </li>
+        <li><b>April 2023</b> ~ MIT Security Seminar </li>
+        <li><b>April 2023</b> ~ <a href="https://youtu.be/Q_3voRu25QU">CMU Crypto Seminar</a> </li> 
+    </ul> </li>
+        
+        <li> Function Secret Sharing for Mixed-Mode and Fixed-Point Secure Computation <ul>
+        <li><b>Oct 2021</b> ~ <a href="https://youtube.com/watch?v=22BfFkP_Hbk">Eurocrypt</a>  </li>
+        </ul> </li>
+        
+        <li> CrypTFlow: Secure TensorFlow Inference <ul>
+        <li><b>Jun 2020</b> ~ <a href="https://youtu.be/ydlEncvKTtU">TPMPC Aarhus</a>  </li>
+        </ul> </li>
+
+    </ul>
+</div>
+
+
+
