@@ -9,6 +9,9 @@
   year      = {2024},
   url       = {https://eprint.iacr.org/2024/666},
   pdf       = {https://eprint.iacr.org/2024/666.pdf},
+  selected  = {true},
+  abbr      = {IEEE S&P},
+  abstract  = {We present Whisper, a system for privacy-preserving collection of aggregate statistics. Like prior systems, a Whisper deployment consists of a small set of non-colluding servers; these servers compute aggregate statistics over data from a large number of users without learning the data of any individual user. Whisper’s main contribution is that its server- to-server communication cost and its server-side storage costs scale sublinearly with the total number of users. In particular, prior systems required the servers to exchange a few bits of information to verify the well-formedness of each client submission. In contrast, Whisper uses silently verifiable proofs, a new type of proof system on secret-shared data that allows the servers to verify an arbitrarily large batch of proofs by exchanging a single 128-bit string. This improvement comes with increased client-to-server communication, which, in cloud computing, is typically cheaper (or even free) than the cost of egress for server-to-server communication. To reduce server storage, Whisper approximates certain statistics using small-space sketching data structures. Applying randomized sketches in an environment with adversarial clients requires a careful and novel security analysis. In a deployment with two servers and 100,000 clients of which 1% are malicious, Whisper can improve server-to-server communication for vector sum by three orders of magnitude while each client’s communication increases by only 10%.}
 }
 
 @inproceedings{elsa,
@@ -22,6 +25,36 @@
   year      = {2023},
   url       = {https://eprint.iacr.org/2022/1695},
   pdf       = {https://eprint.iacr.org/2022/1695.pdf},
+  selected  = {true},
+  abbr      = {IEEE S&P},
+  abstract  = {Federated learning (FL) is an increasingly popular
+approach for machine learning (ML) in cases where the train-
+ing dataset is highly distributed. Clients perform local training
+on their datasets and the updates are then aggregated into
+the global model. Existing protocols for aggregation are either
+inefficient, or don’t consider the case of malicious actors in the
+system. This is a major barrier in making FL an ideal solution
+for privacy-sensitive ML applications. We present ELSA, a
+secure aggregation protocol for FL, which breaks this barrier -
+it is efficient and addresses the existence of malicious actors at
+the core of its design. Similar to prior work on Prio and Prio+,
+ELSA provides a novel secure aggregation protocol built out of
+distributed trust across two servers that keeps individual client
+updates private as long as one server is honest, defends against
+malicious clients and is efficient end-to-end. Compared to prior
+works, the distinguishing theme in ELSA is that instead of the
+servers generating cryptographic correlations interactively, the
+clients act as untrusted dealers of these correlations without
+compromising the protocol’s security. This leads to a much
+faster protocol while also achieving stronger security at that ef-
+ficiency compared to prior work. We introduce new techniques
+that retain privacy even when a server is malicious at a small
+added cost of 7-25% in runtime with negligible increase in
+communication over the case of semi-honest server. Our work
+improves end-to-end runtime over prior work with similar
+security guarantees by big margins - single-aggregator RoFL
+by up to 305x (for the models we consider), and distributed
+trust Prio by up to 8x.}
 }
 
 
@@ -37,6 +70,7 @@
   url       = {https://eprint.iacr.org/2021/1661},
   pdf       = {https://eprint.iacr.org/2021/1661.pdf},
   code      = {https://github.com/ucbrise/waldo},
+  abbr      = {IEEE S&P},
 }
 
 @inproceedings{sirnn,
@@ -54,6 +88,11 @@
   url       = {https://eprint.iacr.org/2021/459},
   pdf       = {https://eprint.iacr.org/2021/459.pdf},
   code      = {https://github.com/mpc-msri/EzPC/tree/master/SIRNN},
+  selected  = {true},
+  abbr      = {IEEE S&P},
+  abstract  = {Complex machine learning (ML) inference algorithms like recurrent neural networks (RNNs) use standard functions from math libraries like exponentiation, sigmoid, tanh, and reciprocal of square root.
+Although prior work on  secure 2-party inference provides specialized protocols for convolutional neural networks (CNNs), existing secure implementations of these math operators rely on generic 2-party computation (2PC) protocols that suffer from high communication.  We provide new  specialized 2PC protocols for math functions that crucially rely on lookup-tables and mixed-bitwidths to address this performance overhead; our protocols for math functions communicate up to 423x less data than prior work. Some of the mixed bitwidth operations used by our math implementations are (zero and signed) extensions, different forms of truncations, multiplication of operands of mixed-bitwidths, and digit decomposition (a generalization of bit decomposition to larger digits). For each of these primitive operations, we construct specialized 2PC protocols that are more communication efficient than generic 2PC, and can be of independent interest.
+Furthermore, our math implementations are numerically precise, which ensures that the secure implementations preserve model accuracy of cleartext. We build on top of our novel protocols to build SIRNN, a library for end-to-end secure 2-party DNN inference, that provides the first secure implementations of an RNN operating on time series sensor data, an RNN operating on speech data, and a  state-of-the-art  ML architecture that combines CNNs and RNNs for identifying all heads present in  images.  Our evaluation shows that SIRNN achieves up to three orders of magnitude of performance improvement when compared to inference of these models using an existing state-of-the-art 2PC framework.}
 }
 
 @inproceedings{alvarezvalle2020secure,
@@ -79,7 +118,9 @@
   pages     = {1392},
   url       = {https://eprint.iacr.org/2020/1392},
   pdf       = {https://eprint.iacr.org/2020/1392.pdf},
-  year      = {2021}
+  year      = {2021},
+  selected  = {true},
+  abbr      = {EUROCRYPT},
 }
 
 @inproceedings{DBLP:conf/ccs/RatheeR0CGR020,
@@ -97,7 +138,11 @@
   url       = {https://doi.org/10.1145/3372297.3417274},
   pdf       = {https://eprint.iacr.org/2020/1002.pdf},
   code      = {https://github.com/mpc-msri/EzPC/tree/master/SCI},
-  year      = {2020}
+  year      = {2020},
+  selected  = {true},
+  abbr      = {ACM CCS},
+  abstract  = {We present CrypTFlow2, a cryptographic framework for secure inference over realistic Deep Neural Networks (DNNs) using
+secure 2-party computation. CrypTFlow2 protocols are both correct -- i.e., their outputs are bitwise equivalent to the cleartext execution -- and efficient -- they outperform the state-of-the-art protocols in both latency and scale. At the core of CrypTFlow2, we have new 2PC protocols for secure comparison and division, designed carefully to balance round and communication complexity for secure inference tasks. Using CrypTFlow2, we present the first secure inference over ImageNet-scale DNNs like ResNet50 and DenseNet121. These DNNs are at least an order of magnitude larger than those considered in the prior work of 2-party DNN inference.  Even on the benchmarks considered by prior work, CrypTFlow2  requires an order of magnitude less communication and 20x-30x less time than the state-of-the-art.}
 }
 
 @inproceedings{DBLP:conf/sp/0001RCGR020,
@@ -115,7 +160,11 @@
   pdf       = {https://eprint.iacr.org/2019/1049.pdf},
   video     = {https://www.youtube.com/watch?v=ydlEncvKTtU&t=5s},
   code      = {https://github.com/mpc-msri/EzPC},
-  year      = {2020}
+  year      = {2020},
+  selected  = {true},
+  abbr      = {IEEE S&P},
+  abstract  = {We present CrypTFlow, a first of its kind system that converts TensorFlow inference code into Secure Multi-party Computation (MPC) protocols at the push of a button. To do this, we build three components. Our first component, Athos, is an end-to-end compiler from TensorFlow to a variety of semi-honest MPC protocols. The second component, Porthos, is an improved semi-honest 3-party protocol that provides significant speedups for TensorFlow like applications. Finally, to provide malicious secure MPC protocols, our third component, Aramis, is a novel technique that uses hardware with integrity guarantees to convert any semi-honest MPC protocol into an MPC protocol that provides malicious security. The malicious security of the protocols output by Aramis relies on integrity of the hardware and semi-honest security of MPC. Moreover, our system matches the inference accuracy of plaintext TensorFlow.
+We experimentally demonstrate the power of our system by showing the secure inference of real-world neural networks such as ResNet50 and DenseNet121 over the ImageNet dataset with running times of about 30 seconds for semi-honest security and under two minutes for malicious security. Prior work in the area of secure inference has been limited to semi-honest security of small networks over tiny datasets such as MNIST or CIFAR. Even on MNIST/CIFAR, CrypTFlow outperforms prior work.}
 }
 
 @article{DBLP:journals/istr/SahaRK19,

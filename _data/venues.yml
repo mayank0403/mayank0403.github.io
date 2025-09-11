@@ -1,9 +1,10 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
+"IEEE S&P":
+  url: https://ieeexplore.ieee.org/xpl/conhome/1000646/all-proceedings
   color: "#00369f"
 
-"PhysRev":
-  url: https://journals.aps.org/
-
-"Vision":
+"EUROCRYPT":
+  url: https://www.iacr.org/meetings/eurocrypt/
   color: "#009f36"
+
+"ACM CCS":
+  color: "#f15a22" 

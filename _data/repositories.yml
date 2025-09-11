@@ -1,14 +1,13 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - mayank0403
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - mayank0403/Verifiable-Hintless-PIR
+  - ucbsky/whisper
+  - ucbsky/elsa
+  - ucbrise/waldo
+  - mpc-msri/EzPC
+  - hyperledger-labs/Scorex
+  - mayank0403/DotFiles
