@@ -2,7 +2,7 @@
 layout: page
 permalink: /repositories/
 title: Repositories
-description: Select repositories.
+description: Repositories for my projects.
 nav: true
 nav_order: 4
 ---

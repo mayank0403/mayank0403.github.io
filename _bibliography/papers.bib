@@ -1,3 +1,19 @@
+@inproceedings{vpir,
+  author    = {Mayank Rathee and
+               Keewoo Lee and
+               Raluca Ada Popa},
+  title     = {Verifiable PIR with Small Client Storage},
+  booktitle = {{IEEE} Symposium on Security and Privacy},
+  volume    = {2026},
+  year      = {2026},
+  url       = {https://eprint.iacr.org/2025/},
+  pdf       = {https://eprint.iacr.org/2025/},
+  code      = {https://github.com/mayank0403/Verifiable-Hintless-PIR},
+  selected  = {true},
+  abbr      = {IEEE S&P},
+  abstract  = {Efficient Verifiable Private Information Retrieval (vPIR) protocols, and more generally Verifiable Linearly Homomorphic Encryption (vLHE), suffer from high client storage. VeriSimplePIR (USENIX Security 2024), the state-of-the-art vPIR protocol, requires clients to persistently maintain over 1 GiB of local storage to privately access an 8 GiB remote database. We present a new vPIR protocol that reduces the client state by orders of magnitude while preserving online latency. In our protocol, clients only need to store 512 KiB for an 8 GiB database, achieving a 2000x improvement. Our vPIR protocol is built over our new vLHE scheme. Unlike VeriSimplePIR, our scheme doesn’t use random oracles and relies only on standard lattice assumptions - (R)LWE and SIS. These improvements come at a 2.5x cost in server throughput over VeriSimplePIR. Despite this throughput overhead, we achieve a comparable online latency to VeriSimplePIR by implementing several optimizations including query-level preprocessing. We also introduce the notion of covert vPIR (cvPIR), where stateful clients enjoy full vPIR security, while even stateless clients benefit from covert security against a malicious server.}
+}
+
 @inproceedings{whisper,
   author    = {Mayank Rathee and
                Yuwen Zhang and
@@ -9,6 +25,7 @@
   year      = {2024},
   url       = {https://eprint.iacr.org/2024/666},
   pdf       = {https://eprint.iacr.org/2024/666.pdf},
+  code      = {https://github.com/ucbsky/whisper},
   selected  = {true},
   abbr      = {IEEE S&P},
   abstract  = {We present Whisper, a system for privacy-preserving collection of aggregate statistics. Like prior systems, a Whisper deployment consists of a small set of non-colluding servers; these servers compute aggregate statistics over data from a large number of users without learning the data of any individual user. Whisper’s main contribution is that its server- to-server communication cost and its server-side storage costs scale sublinearly with the total number of users. In particular, prior systems required the servers to exchange a few bits of information to verify the well-formedness of each client submission. In contrast, Whisper uses silently verifiable proofs, a new type of proof system on secret-shared data that allows the servers to verify an arbitrarily large batch of proofs by exchanging a single 128-bit string. This improvement comes with increased client-to-server communication, which, in cloud computing, is typically cheaper (or even free) than the cost of egress for server-to-server communication. To reduce server storage, Whisper approximates certain statistics using small-space sketching data structures. Applying randomized sketches in an environment with adversarial clients requires a careful and novel security analysis. In a deployment with two servers and 100,000 clients of which 1% are malicious, Whisper can improve server-to-server communication for vector sum by three orders of magnitude while each client’s communication increases by only 10%.}
@@ -25,6 +42,7 @@
   year      = {2023},
   url       = {https://eprint.iacr.org/2022/1695},
   pdf       = {https://eprint.iacr.org/2022/1695.pdf},
+  code      = {https://github.com/ucbsky/elsa},
   selected  = {true},
   abbr      = {IEEE S&P},
   abstract  = {Federated learning (FL) is an increasingly popular

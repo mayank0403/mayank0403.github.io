@@ -25,11 +25,12 @@ I am a fifth-year CS Ph.D. student at UC Berkeley advised by <a href="https://pe
 
 Email ~ mayankr at berkeley dot edu
 
+<b>I am looking for (industry) jobs starting May 2026.</b> My CV is available upon request. 
+
 <!-- From 2018-2020, I was a Research Fellow at Microsoft Research (MSR) India, where I worked closely with <a href="https://www.microsoft.com/en-us/research/people/nichandr/">Nishanth Chandran</a>, <a href="https://www.microsoft.com/en-us/research/people/digup/">Divya Gupta</a>, <a href="https://www.microsoft.com/en-us/research/people/rahsha/">Rahul Sharma</a> and <a href="https://www.microsoft.com/en-us/research/people/aseemr/">Aseem Rastogi</a> on the <a href="https://www.microsoft.com/en-us/research/project/ezpc-easy-secure-multi-party-computation/">EzPC</a> project.
 I did my B.Tech. from the <a href="https://www.iitbhu.ac.in/">Indian Institute of Technology (Banaras Hindu University) Varanasi</a>. During my undergrad, I worked with <a href="http://chepurnoy.org/">Alexander Chepurnoy</a>, Prof. <a href="http://www.f.waseda.jp/tkoshiba/">Takeshi Koshiba</a>, <a href="http://t2r2.star.titech.ac.jp/cgi-bin/researcherinfo.cgi?lv=en&q_researcher_content_number=CTT100381367">Keisuke Tanaka</a> and <a href="https://iohk.io/en/team/mario-larangeira">Mario Larangeira</a>.-->
 
 
-<br>
 <br>
 <br>
 <br>
