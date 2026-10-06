@@ -9,28 +9,7 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-publications",
-          title: "Publications",
-          description: "Publications by categories in reversed chronological order.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/publications/";
-          },
-        },{id: "nav-work-experience",
-          title: "Work Experience",
-          description: "A list of places that I have worked at.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/experience/";
-          },
-        },{id: "nav-repositories",
-          title: "Repositories",
-          description: "Repositories for my projects.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/repositories/";
-          },
-        },{id: "books-the-godfather",
+  },{id: "books-the-godfather",
           title: 'The Godfather',
           description: "",
           section: "Books",handler: () => {
