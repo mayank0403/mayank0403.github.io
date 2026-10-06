@@ -11,12 +11,17 @@
   </head>
 
   <body class="home-page {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
-    <script>document.documentElement.classList.add("js");</script>
+    <script>
+      document.documentElement.classList.add('js');
+    </script>
 
     <!-- Minimal header: name, in-page anchors, theme toggle -->
     <header class="site-header">
       <div class="container site-nav">
-        <a class="site-name" href="{{ '/' | relative_url }}">{{ site.first_name }} {{ site.last_name }}</a>
+        <a class="site-name" href="{{ '/' | relative_url }}">
+          {{- site.first_name }}
+          {{ site.last_name -}}
+        </a>
         <nav class="site-links" aria-label="Sections">
           <a href="#news">News</a>
           <a href="#experience">Experience</a>
@@ -51,7 +56,11 @@
           >
         {% endif %}
         <div class="hero-text">
-          <h1 class="hero-name">{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}</h1>
+          <h1 class="hero-name">
+            {{ site.first_name }}
+            {{ site.middle_name }}
+            {{ site.last_name }}
+          </h1>
           {% if page.role %}
             <p class="hero-role">
               {% if page.role_logo %}
@@ -76,7 +85,9 @@
                 data-user="{{ page.email_user }}"
                 data-domain="{{ page.email_domain }}"
                 title="Hover to reveal"
-              >{{ page.email_text | default: 'hover to reveal email' }}</a>
+              >
+                {{- page.email_text | default: 'hover to reveal email' -}}
+              </a>
             </p>
           {% endif %}
           <div class="hero-social">{% include social.liquid %}</div>
@@ -147,7 +158,10 @@
                 <div class="experience-body">
                   <div class="experience-role">{{ job.position }}</div>
                   <div class="experience-org">
-                    {{ job.name }}{% if job.location %}<span class="sep">·</span>{{ job.location }}{% endif %}
+                    {{ job.name -}}
+                    {%- if job.location -%}
+                      <span class="sep">·</span>{{ job.location -}}
+                    {%- endif %}
                   </div>
                 </div>
                 <div class="experience-dates">{{ start }} – {{ end }}</div>
@@ -186,12 +200,17 @@
                       <div class="author">
                         {% for inv in patent.inventors %}
                           {% if forloop.last and forloop.length > 1 %}and {% endif %}
-                          {% if inv == 'Mayank Rathee' %}<em>{{ inv }}</em>{% else %}{{ inv }}{% endif %}
+                          {% if inv == 'Mayank Rathee' -%}
+                            <em>{{ inv }}</em>
+                          {%- else -%}
+                            {{- inv -}}
+                          {%- endif %}
                           {%- unless forloop.last or forloop.length == 2 %}, {% endunless %}
                         {% endfor %}
                       </div>
                       <div class="periodical">
-                        {{ patent.number }}{% if patent.assignee %} · {{ patent.assignee }}{% endif %}
+                        {{ patent.number -}}
+                        {%- if patent.assignee %} · {{ patent.assignee }}{% endif %}
                         {%- if patent.granted %} · Granted {{ patent.granted }}{% elsif patent.filed %} · Filed {{ patent.filed }}{% endif %}
                       </div>
                       <div class="links">
@@ -233,7 +252,8 @@
                 >
                   <span class="talk-title">{{ talk.title }}</span>
                   <span class="talk-meta">
-                    {{ n }} {% if n == 1 %}talk{% else %}talks{% endif %}
+                    {{ n }}
+                    {% if n == 1 %}talk{% else %}talks{% endif %}
                     <i class="ti ti-chevron-down chev"></i>
                   </span>
                 </button>
@@ -244,7 +264,10 @@
                         <span class="date">{{ v.date }}</span>
                         <span class="text">
                           {% if v.url %}
-                            <a href="{{ v.url }}">{{ v.venue }} <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="{{ v.url }}">
+                              {{- v.venue }}
+                              <i class="fa-solid fa-arrow-up-right-from-square"></i
+                            ></a>
                           {% else %}
                             {{ v.venue }}
                           {% endif %}

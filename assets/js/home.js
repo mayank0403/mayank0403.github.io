@@ -189,9 +189,7 @@
   function sweepTitle(id) {
     var target = document.getElementById(id);
     if (!target) return;
-    var title = target.matches(".section-title, .section-subtitle")
-      ? target
-      : target.querySelector(".section-title, .section-subtitle");
+    var title = target.matches(".section-title, .section-subtitle") ? target : target.querySelector(".section-title, .section-subtitle");
     if (!title) return;
     title.classList.remove("sweep");
     // Force reflow so the animation restarts when the same anchor is clicked twice.
