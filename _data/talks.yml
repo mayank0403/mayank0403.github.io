@@ -1,0 +1,50 @@
+- title: Verifying Secure Execution for Systems with Untrusted Components
+  venues:
+    - date: Sep 2026
+      venue: UC Berkeley
+- title: "Pincer: Resource Authorization for Agents using a Digital Twin"
+  venues:
+    - date: Jul 2026
+      venue: Google
+- title: Verifiable PIR with Small Client Storage
+  venues:
+    - date: May 2026
+      venue: IEEE S&P, SF
+    - date: Oct 2025
+      venue: Google Security Seminar
+    - date: Jul 2025
+      venue: AWS, NYC
+    - date: Jul 2025
+      venue: JP Morgan, NYC
+    - date: May 2025
+      venue: Penn Security Seminar
+    - date: May 2025
+      venue: MIT Security Seminar
+- title: Private Analytics via Streaming, Sketching, and Silently Verifiable Proofs
+  venues:
+    - date: Apr 2026
+      venue: Realm Labs, Sunnyvale
+    - date: Jul 2024
+      venue: Apple, Cupertino
+    - date: May 2024
+      venue: IEEE S&P, SF
+- title: "ELSA: Secure Aggregation for Federated Learning with Malicious Actors"
+  venues:
+    - date: May 2023
+      venue: IEEE S&P, SF
+      url: https://youtu.be/PmlJ0cQhgR8
+    - date: Apr 2023
+      venue: MIT Security Seminar
+    - date: Apr 2023
+      venue: CMU Crypto Seminar
+      url: https://youtu.be/Q_3voRu25QU
+- title: Function Secret Sharing for Mixed-Mode and Fixed-Point Secure Computation
+  venues:
+    - date: Oct 2021
+      venue: Eurocrypt
+      url: https://youtube.com/watch?v=22BfFkP_Hbk
+- title: "CrypTFlow: Secure TensorFlow Inference"
+  venues:
+    - date: Jun 2020
+      venue: TPMPC Aarhus
+      url: https://youtu.be/ydlEncvKTtU

@@ -1,25 +1,43 @@
 {
   "work": [
     {
+      "name": "Google DeepMind",
+      "location": "San Francisco, CA",
+      "position": "Research Scientist",
+      "startDate": "2026-10-19",
+      "logo": "/assets/img/logos/deepmind.svg"
+    },
+    {
+      "name": "Realm Labs",
+      "location": "Sunnyvale, CA",
+      "position": "Machine Learning Intern",
+      "startDate": "2026-05",
+      "endDate": "2026-08",
+      "logo": "/assets/img/logos/realm.svg"
+    },
+    {
       "name": "AWS (Amazon Web Services)",
       "location": "New York City, NY",
       "position": "Applied Scientist Intern",
       "startDate": "2025-05",
-      "endDate": "2025-11"
+      "endDate": "2025-11",
+      "logo": "/assets/img/logos/aws.svg"
     },
     {
       "name": "Apple",
       "location": "Cupertino, CA",
       "position": "SWE Intern",
       "startDate": "2024-05",
-      "endDate": "2024-08"
+      "endDate": "2024-08",
+      "logo": "/assets/img/logos/apple.svg"
     },
     {
       "name": "Microsoft Research",
       "location": "Bangalore, India",
       "position": "Research Fellow",
       "startDate": "2018-06",
-      "endDate": "2020-12"
+      "endDate": "2020-12",
+      "logo": "/assets/img/logos/microsoft.svg"
     }
   ]
 }

@@ -1,3 +1,81 @@
+% ---------------------------------------------------------------------------
+% Manuscripts (rendered under "Manuscripts" on the publications page)
+% ---------------------------------------------------------------------------
+
+@unpublished{pincer,
+  author    = {Mayank Rathee and
+               Alexander Stepanov and
+               Shalin Madabhavi and
+               Jinhao Zhu and
+               Raluca Ada Popa and
+               Ion Stoica},
+  title     = {Pincer: Resource Authorization for Agents using a Digital Twin},
+  note      = {arXiv preprint},
+  year      = {2026},
+  month     = {October},
+  url       = {https://arxiv.org/abs/2610.02569},
+  pdf       = {https://arxiv.org/pdf/2610.02569},
+  arxiv     = {2610.02569},
+  abbr      = {arXiv},
+  abstract  = {Coding agents have become increasingly long-horizon, autonomous, reliant on general-purpose shell and maintain their own persistent memory for self-improvement. While these capabilities have made the agents powerful, they have also made them harder to defend against external adversaries. Defenses that restrict this architecture --- typed tools, information-flow control, or policy prediction engines --- give up too much functionality to be adopted. Agents deployed today (e.g. Claude, Codex) rely on a combination of user-mediated and automode sandboxing as their primary defense. In user-mediated sandboxing, user-maintained policies decay over time and repeated permission requests cause user fatigue, while auto mode's tool-call classifiers learn no user-specific policy and are not meant to defend against adversarial setups. Pincer is a new defense that operates at the resource layer and works alongside existing defenses at the tool-call layer like the auto mode. At the core of Pincer lies a digital twin, an isolated-context model that automatically learns and enforces dynamic user-specific least-privilege policies. The digital twin keeps continually learning the user's preferences allowing it to act as the user's proxy for the agent's permission requests. To emulate the learning phase, we propose a new usercentric dataset with examples following a multi-day transcript of user-agent interaction. Our evaluation shows that Pincer performs strongly on both security and utility in comparison to several baselines which includes variants of LLM judges and adaptations of Conseca (HotOS '25). We highlight attack types where Pincer's design leads to a significant security improvement compared to all other baselines, while outperforming the baselines even for other types of attacks.}
+}
+
+@unpublished{tainttrace,
+  author    = {Mayank Rathee and
+               Piotr Mardziel and
+               Saurabh Shintre and
+               Siyu Zhang},
+  title     = {TaintTrace: Towards Deployable Multi-Hop Attribution in a Single Forward Pass},
+  note      = {Unpublished manuscript},
+  year      = {2026},
+  abbr      = {Manuscript},
+}
+
+% ---------------------------------------------------------------------------
+% Dissertation (rendered under "Dissertation" on the publications page)
+% ---------------------------------------------------------------------------
+
+@phdthesis{rathee2026thesis,
+  author    = {Mayank Rathee},
+  title     = {Verifying Secure Execution for Systems with Untrusted Components},
+  school    = {EECS Department, University of California, Berkeley},
+  year      = {2026},
+  month     = {September},
+  number    = {UCB/EECS-2026-288},
+  note      = {Technical Report No. UCB/EECS-2026-288. Advisor: Raluca Ada Popa.},
+  url       = {https://www2.eecs.berkeley.edu/Pubs/TechRpts/2026/EECS-2026-288.html},
+  html      = {https://www2.eecs.berkeley.edu/Pubs/TechRpts/2026/EECS-2026-288.html},
+  pdf       = {https://www2.eecs.berkeley.edu/Pubs/TechRpts/2026/EECS-2026-288.pdf},
+  abbr      = {Ph.D. Thesis},
+  abstract  = {The question of trust lies at the center of modern systems: they rely on complex components that may be compromised by an adversary. Even when only a single component cannot be trusted, trust in the system's behavior can fall apart. Techniques that enable verification of expected behavior address this challenge. While for many conventional systems, verification may be as straightforward as capturing the expected behavior through deterministic policies and checking them against the outputs of the components, this approach isn't suitable for two classes of modern systems: cryptographic systems and AI systems, where the outputs are either encrypted or highly open-ended. Specialized techniques for verification exist for such systems; however, they incur significant overheads which makes them harder to adopt. To this end, we introduce new techniques for efficiently verifying secure execution across a variety of systems, from cryptographic systems for secure aggregation and private information retrieval to AI agents. First, we look at the problem of secure aggregation for federated learning and privacy-preserving telemetry. Our system, Whisper, for large-scale private telemetry in the two-server setting achieves orders of magnitude reduction in server-to-server communication when verifying that measurements are individually well-formed. After that, we look at the problem of verifiable private information retrieval (vPIR), where a client privately fetches information from a remote server while verifying that the server does not cheat. We propose a new protocol that reduces the client's storage by orders of magnitude for standard database sizes. We introduce the notion of covert vPIR which can practically bring vPIR technology to millions of devices. Towards the end, we transition to the world of AI agents. We present Pincer, a system that augments agents with a digital twin that verifies their actions against automatically learned user preferences. This reduces the user burden dramatically while guarding the agent from going off the rails when it encounters untrusted data.}
+}
+
+% ---------------------------------------------------------------------------
+% Peer-reviewed publications
+% ---------------------------------------------------------------------------
+
+@inproceedings{shannonprover,
+  author    = {Yiping Ma and
+          Yu-Lin Tsai and
+          Mayank Rathee and
+          Deevashwer Rathee and
+          François Dupressoir and
+          Pierre-Yves Strub and
+      Raluca Ada Popa},
+  title     = {ShannonProver: Towards Automating Formal Cryptographic Proofs},
+  booktitle = {{IEEE} Symposium on Security and Privacy},
+  volume    = {2027},
+  year      = {2027},
+  url       = {https://arxiv.org/abs/2607.02847},
+  pdf       = {https://arxiv.org/pdf/2607.02847},
+  code      = {https://github.com/SkyShannonProver/shannon-prover},
+  selected  = {true},
+  abbr      = {IEEE S&P},
+  abstract  = {Cryptographic proofs are produced at a scale that increasingly exceeds the community's ability to verify them manually. Machine-checked proofs offer a path toward scalable proof verification, but they shift the bottleneck to writing the proofs themselves: even when the high-level proof plan is known, turning it into a proof script requires spelling out every detail the plan leaves implicit, which is laborious even for experts. This paper presents ShannonProver, an agentic system for automating cryptographic proofs. Given a protocol and its security definitions modeled by a cryptographer, ShannonProver decomposes the main theorem into intermediate games and lemmas, and constructs EasyCrypt proof scripts for those lemmas.
+We evaluate ShannonProver on a new dataset of lemmas in EasyCrypt. The benchmark spans textbook primitives, deployed standardized protocols, as well as recent NIST proposals, and includes expert case studies drawn from a corpus that has not previously been available online. On case studies such as ChaChaPoly1305 and MEE-CBC, ShannonProver completes within hours proof developments that historically took experts weeks to months. More broadly, this work suggests a path toward accelerating cryptographic research: as agents automate the proof-engineering burden, cryptographers can iterate more quickly on new constructions, obtain machine-checked assurance earlier, and bring protocols from design to deployment faster.}
+}
+
+
 @inproceedings{vpir,
   author    = {Mayank Rathee and
                Keewoo Lee and

@@ -51,9 +51,13 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   const updateInputField = () => {
-    const hashValue = decodeURIComponent(window.location.hash.substring(1)); // Remove the '#' character
+    let hashValue = decodeURIComponent(window.location.hash.substring(1)); // Remove the '#' character
+    // A hash that names an element on the page (e.g. #publications) is an anchor, not a search term
+    if (hashValue === "" || document.getElementById(hashValue)) {
+      hashValue = "";
+    }
     document.getElementById("bibsearch").value = hashValue;
-    filterItems(hashValue);
+    filterItems(hashValue.toLowerCase());
   };
 
   // Sensitive search. Only start searching if there's been no input for 300 ms

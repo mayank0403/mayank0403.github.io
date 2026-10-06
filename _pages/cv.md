@@ -1,11 +1,9 @@
 ---
-layout: cv
+layout: default
 permalink: /experience/
 title: Work Experience
-nav: true
-nav_order: 3
-#cv_pdf: example_pdf.pdf # you can also use external links here
-description: A list of places that I have worked at.
-#toc:
-#  sidebar: left
+redirect: /#experience
+nav: false
 ---
+
+Redirecting to the <a href="{{ '/#experience' | relative_url }}">experience section</a>.

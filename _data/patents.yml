@@ -1,0 +1,25 @@
+# Patents. Each entry renders under the "Patents" section of the home page.
+# Fields: title, number, inventors (list), assignee, filed, granted, url, abstract
+- title: Private Inference in Deep Neural Network
+  number: US 12,346,830 B2
+  inventors:
+    - Nishanth Chandran
+    - Divya Gupta
+    - Aseem Rastogi
+    - Rahul Sharma
+    - Nishant Kumar
+    - Mayank Rathee
+    - Deevashwer Rathee
+  assignee: Microsoft Technology Licensing, LLC
+  filed: Oct 30, 2020
+  granted: Jul 1, 2025
+  url: https://patents.google.com/patent/US12346830B2/en
+  abstract: >-
+    A secure inference over Deep Neural Networks (DNNs) using secure two-party computation to perform
+    privacy-preserving machine learning. The secure inference uses a particular type of comparison that
+    can be used as a building block for various layers in the DNN including, for example, ReLU
+    activations and divisions. The comparison securely computes a Boolean share of a bit representing
+    whether input value x is less than input value y, where x is held by a user of the DNN, and where y
+    is held by a provider of the DNN. Each party computing system parses their input into leaf strings
+    of multiple bits. This is much more efficient than if the leaf strings were individual bits.
+    Accordingly, the secure inference described herein is more readily adapted for using in complex DNNs.
